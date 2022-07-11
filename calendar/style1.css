@@ -1,0 +1,258 @@
+@import "https://fonts.googleapis.com/css?family=Raleway";
+* { box-sizing: border-box; }
+
+h1{ margin: 0; }
+#contact { 
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  margin: 4em auto;
+  width: 100px; 
+  height: 30px; 
+  line-height: 30px;
+  background: teal;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.draggablecss{color:#fff;border-radius: 5px;
+   border: 1px solid #ccc;}*/
+
+#contact:hover { background: #666; }
+#contact:active { background: #444; }
+
+#contactForm { 
+  z-index: 1;
+  display: none;
+  position: absolute;
+  border: 6px solid salmon; 
+  padding: 1em;
+  width: 400px;
+  text-align: center;
+  background-color: #A6F6F9;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%)
+  
+}
+
+input, textarea { 
+  margin: .8em auto;
+  font-family: inherit; 
+  text-transform: inherit; 
+  font-size: inherit;
+  
+  display: block; 
+  width: 280px; 
+  padding: 0em;
+}
+textarea { height: 80px; resize: none; }
+
+.formBtn { 
+  width: 140px;
+  display: inline-block;
+  
+  background: teal;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.2em;
+  border: none;
+  height: 30px;
+}
+.calendar{ 
+    z-index: 0;
+   position:relative; 
+   width: 960px;
+   top: 50px;
+   right:-50px; 
+} 
+
+.calendarinday{ 
+   position:relative; 
+   width: 90%; 
+   top: 0px;
+   left: 5%;
+} 
+div.date, div.days{ 
+   width: 135px; 
+   border: 1px solid #CACACA;
+   border-radius: 2px;  
+   float: left; 
+   margin: 1px; 
+
+
+
+} 
+.blankday{ 
+   background:#E9E9E9; 
+}
+div.date{ 
+   height: 100px; 
+} 
+.today{ 
+   background:#92FFC9;
+   color: #625FDF;l   
+} 
+
+.allbottom{
+    position: absolute;left: 20px;
+}
+
+.showdate{
+  position: absolute;top: -40px;left: 430px;
+}
+
+
+
+
+.mon{
+background-color:#FBF161 ;
+}
+.tue{
+background-color: #FB61DA  ;
+}
+.wed{
+background-color: #61FB85  ;
+}
+.thu{
+background-color:  #FA7503  ;
+}
+.fri{
+background-color: #03D4FA;  
+}
+.sat{
+background-color: #9403FA;  
+}
+.sun{
+ background-color:   #FA1603 ; 
+}
+.button {
+  position: relative;
+  background-color: #03FA18  ;
+  border: none;
+  color:#040A59  ;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #03FA90;
+}
+.inleft{
+  float: left;
+  position: absolute;
+  text-align: left;
+  width: 235px;height: 1500px; 
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+}
+.inright{
+  float: right;
+  position: relative;
+  text-align: center;
+  width: 1213px;height: 1500px;
+  left: 20px;
+   padding: 10px;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+}
+
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+.li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+#panel {
+  padding: 20px;
+  display: none;
+}
+.weektime
+{
+  width: 136px;
+  height: 65px;
+  border: 1px solid black;
+}
+
+.eachdayinweek{
+  color: #121313;
+  text-align: center;
+  /*border-radius: 100px;*/
+  font-size: 10px;
+  font-family: Comic Sans MS;
+
+}
+
+.intop{
+  position: relative;
+  top: -20px;
+  font-size: 270%;
+  color: black;
+}
+.eachtimeinweek{
+  width: 120px; height: 40px;
+  background: #ffff;
+  border: 0.5px solid #F7F5F7;
+  padding: 5px;
+
+}
+
+.eachtime{
+  width: 70%;
+  height: 50px;
+  border: 1px solid;
+  color: black;
+  font-size: 10px;
+  padding: 5px; 
+}
+
+.inleftday{
+  float: left;
+  position: absolute;
+  text-align: left;
+  width: 715px;height: 1500px; 
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+}
+.inrightday{
+  float: right;
+  position: relative;
+  text-align: center;
+  width:  920px;height: 1500px;
+  left: 235px;
+   padding: 10px;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+}
+.today{ 
+   background:#92FFC9;
+   color: #625FDF;
+} 
